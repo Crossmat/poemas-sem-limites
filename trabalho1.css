@@ -1,0 +1,939 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    background-image: url(poema.jpg);
+    background-attachment: fixed;
+}
+/* Container principal */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 150px;
+    height: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Título do livro */
+.book-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff965d;
+}
+
+/* Nome do autor */
+.author-name {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Container do livro */
+.book-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+/* Imagem do livro */
+.book-cover {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Informações do livro */
+.book-info {
+    max-width: 500px;
+}
+
+/* Títulos das seções */
+.section-title {
+    color: #61dafb;
+    margin-bottom: 10px;
+}
+
+/* Descrição do livro */
+.book-description {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+/* Lista de detalhes */
+.book-details {
+    list-style: none;
+    padding: 0;
+}
+
+.book-detail-item {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.container-drummond {
+    height: 600px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 200px;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.image-section {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.drummond-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-section {
+    flex: 2 1 500px;
+    padding: 10px;
+}
+
+.author-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff965d;
+}
+
+.author-description,
+.author-details {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     background-color: transparent;
+    padding: 20px 0;
+    position: fixed ;
+    height: 8vh;
+    width: 100%;
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000; /* Garante que o nav fica acima de outros elementos */
+}
+body.content div{
+    opacity: 1;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 5px;
+}
+
+
+nav a:hover {
+    color: rgb(107, 16, 99);
+    opacity: 0.7;
+}
+nav.scrollnav{
+    background-color:#1d0a25;
+    height: 4vh;
+}
+nav.scrollnav a{
+    color: rgb(255, 255, 255);
+}
+.menu {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+.poemas {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(17, 63, 155)  13%, rgba(0, 0, 0, 0.0) 100%);;
+}
+.poemas h1{
+    font-family: oblique;
+    font-size: 50px;
+}
+.box1 {
+    height: 700px;
+    display: flex;
+}
+.box2 {
+    flex: 20%;
+    background-color: #ff965d;
+}
+.box3 {
+    flex: 80%;
+    background-color: azure;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 1000px;
+    background-image: url(fundo1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slogan {
+    font-size: 30px;
+    font-style: oblique;
+}
+.content2 div{
+    width: 1024px;
+}
+.content div {
+    max-width: 1200px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.content div h2{
+    font-size: 2em;
+}
+.content3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    background: rgb(212,100,13);
+    background: linear-gradient(0deg, rgba(212,100,13,1) 13%, rgb(32, 15, 71) 75%);;
+    background-size: cover;
+}
+.content3 div{
+    padding: 20px;
+}
+.content2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url(fundo2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+.content4{
+    height: 200px;
+    background: rgb(212,100,13);
+    background: linear-gradient(180deg, rgba(212,100,13,1) 13%, rgba(181,199,197,1) 68%);;
+    backdrop-filter: blur(30px);
+    color: black;
+}
+.content4 div{
+    padding: 40px;
+    justify-items: center;
+    text-align: center; /*alinha o texto no meio do div*/
+}
+.content5{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 700px;
+    background-image: url(fundo5.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+}
+.content5 div{
+    padding-top: 200px;
+    color: rgb(255, 255, 255);
+}
+.contentpoema{
+    height: 200px;
+    background-color: black;
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    padding-top: 90px;
+    font-style: oblique;
+    background: linear-gradient(180deg, rgb(27, 113, 139) 13%, rgb(47, 4, 71) 68%);;
+}
+.poemagrande {
+    display: flex;
+    height: 1000px;
+    background: linear-gradient(180deg, rgb(22, 8, 66) 53%, rgb(17, 63, 155) );;;
+    justify-content: center;
+}
+.poemagrande h1{
+    text-align: center;
+    font-size: 45px;
+    font-style: oblique;
+}
+.oqueepoema {
+    width: 300px;
+    height: 325px;
+    padding: 20px;
+    margin-top: 240px;
+    text-align: justify;
+    border-radius: 40px;
+}
+.oqueepoematipo2{
+    width: 400px;
+    line-height: 1.4;
+    height: 325px;
+    padding: 20px;
+    margin-top: 240px;
+    text-align: justify;
+    border-radius: 40px;
+}
+.oqueepoematipo2 p{
+    font-size: 20px;
+}
+.oqueepoematipo2 h1{ 
+    justify-content: center;
+    text-align: center;
+}
+.oqueepoematipo2 h2{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+.oqueepoema1 {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 240px;
+    text-align: justify;
+    border-radius: 40px;
+}
+.oqueepoema1 h1{
+    text-align: center;
+    font-size: 32px;
+    font-style: oblique
+}
+.oqueepoema1 p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.4;
+    padding: 10px;
+    hyphens: auto;
+    font-size: 20px;
+}
+.oqueepoema h1{
+    text-align: center;
+    font-size: 30px;
+}
+.oqueepoema p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+    padding: 10px;
+    hyphens: auto;
+    font-size: 20px;
+}
+.poem-box1 {
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 300px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 40px;
+}
+.poem-box11 {
+    width: 400px;
+    line-height: 1.2;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 300px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 40px;
+}
+.poem-box1 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.poem-box11 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.poem-box11 p{
+    text-align: justify;
+    hyphens: auto;
+}
+.poem-box11 a{
+    color: #ddd;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.poem-box11 a:hover{
+    color: rgb(245, 116, 41);
+    transition: 0.8s;
+}
+.poem-box1 h2{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.poem-box11 h2{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.poem-box2{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(47, 4, 71);
+}
+
+.poem-box1 p{
+    text-align: center;
+    hyphens: auto;
+}
+.poem-box1 a{
+    color: #ddd;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.poem-box1 a:hover{
+    color: rgb(245, 116, 41);
+    transition: 0.8s;
+}
+h2 {
+    font-size: 32px;
+}
+.content21{
+    height: 190px;
+    background-color: black;
+    text-align: center;
+}
+.content21 div{
+    padding-top: 50px;;
+    font-size: 60px;
+}
+.autores{
+    display: flex;
+    height: 1000px;
+    background-image: url(fundo3.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+.autores2{
+    margin: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    width: 500px;
+    justify-content: space-around;
+    padding: 30px;
+}
+.autores h1{
+    font-size: 40px;
+    font-style: oblique;
+}
+.autores4 {
+    height: 300px;
+    margin-right: 200px;
+    justify-content: space-around;
+    margin-bottom: 400px;
+}
+.autores3{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 40px;
+}
+.autores3 a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 300px;
+    transition: 0.3s;
+}
+.autores3 a:hover{
+    color: rgb(107, 16, 99);
+}
+.autores3{
+    margin-bottom: 60px;
+}
+.livros{
+    height: 1600px;
+    background: linear-gradient(180deg, rgb(22, 8, 66) 53%, rgb(17, 63, 155) );;
+    justify-content: center;
+    text-align: center;
+    font-style: oblique;
+}
+.poemastipos{
+    margin-left: 00px;
+    background-color: black;
+    width: 300px;
+    height: 400px;
+}
+.poemastipo{ 
+        display: flex;
+        height: 1000px;
+        background: linear-gradient(180deg, rgb(22, 8, 66) 53%, rgb(17, 63, 155) );;;
+        justify-content: center;   
+}
+.oqueepoematipo {
+    width: auto;
+    height: 325px;
+    padding: 20px;
+    margin-top: 240px;
+    border-radius: 40px;
+}
+.oqueepoematipo h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+}
+.oqueepoematipo p {
+    text-align: center;
+    line-height: .5;
+    word-spacing: 0.1em;
+    padding: 10px;
+    hyphens: auto;
+    font-size: 20px;
+}
+.oqueepoematipo h2{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.livros1{
+    height: 1200px;
+}
+
+.card-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 1600px;
+    padding-top: 150px;
+    padding-left: 80px;
+    height: 1400px;
+    padding-bottom: 00px;
+}
+.card-container1{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 1600px;
+    padding-top: 150px;
+    padding-left: 130px;
+    height: 700px;
+    padding-bottom: 00px;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    backdrop-filter: brightness(200%);
+    border: 3px outset white;
+}
+.card1{
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.5); /* Fundo escurecido com opacidade */
+    border-radius: 40px;
+    border: 3px outset white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+    border-bottom: 3px solid #ddd;
+}
+
+.card:hover img {
+    opacity: 0.85;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: #007bff;
+}
+
+.card-description {
+    hyphens: auto;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    font-size: 16px;
+}
+.livro4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    height: 600px;
+}
+.book-card{
+    display: flex;
+    gap: 140px;
+}
+.book-info p{
+    width: 400px;
+    text-align: justify;
+    font-size: 20px;
+}
+footer p {
+    margin: 10px 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* para celular */
+@media screen and (max-width: 999px) {
+p{
+font-size: 15px;
+}
+.slogan{
+    font-size: 15px;
+}
+.menu{
+    font-size: 14px;
+}
+.nav-list {
+    position: absolute;
+    top: 8vh;
+    right:0 ;
+    width: 30vw;
+    height: 60vh;
+    background-color:transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    padding-right: 30px;
+}
+.nav-list li {
+    margin-left: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 120px;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+.mobile-menu{
+    display: block;
+}
+footer {
+    width: 100%;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+header p{
+    display: none;
+}
+.content{
+    flex-direction: column;
+    height: 500px;
+}
+.content div{
+    padding: 40px;
+    margin-top: 0px;
+}
+.content2 div{
+    padding-bottom: 50px;
+    margin: 20px;
+    max-height: 500px;
+}
+.content div h2{
+    font-style: italic;
+}
+.content2 div h2{
+    font-style: italic;
+}
+nav.scrollnav{
+    height: 8vh;
+    text-align: center;
+}
+.poem-box p {
+    margin-top: 0;
+    font-size: 15px;
+}
+.poem-box1 h1{
+    font-size:30px ;
+}
+.poem-box11{
+    width: 330px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 200px;
+}
+.poem-box11 p{
+    font-size: 20px;
+}
+.card img {
+    display: none;
+}
+.card-description{
+    display: none;
+}
+.card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+    
+}
+.card-container1{
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 17px;
+    height: auto;
+}
+.card-title{
+    font-size: 20px;
+}
+.content4{
+    height: 170px;
+}
+.poemas h1{
+    font-size: 24px;
+}
+.poemagrande{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1200px;
+    margin-bottom: 0px;
+}
+.poemastipo{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1500px;
+    margin-bottom: 0px;
+}
+.oqueepoema1{
+    margin-top: 300px;
+}
+.oqueepoematipo{
+    width: 100%;
+    padding: 0px;
+}
+.oqueepoematipo p{
+    font-size: 15px;
+}
+.oqueepoematipo h1{
+    font-size: 30px;
+}
+.oqueepoematipo2{
+    width: 310px;
+    margin-top: 0;
+}
+.oqueepoematipo2 p{
+    font-size: auto;
+}
+.book-title {
+    font-size: 2em;
+}
+
+.author-name {
+    font-size: 1em;
+}
+
+.book-container {
+    flex-direction: column;
+    align-items: center;
+}
+.book-info p{
+    font-size: 14px;
+    width: auto;
+}
+.container{
+    border: 0px;
+    box-shadow: none;
+}
+.book-cover {
+    width: 150px; /* Reduz a largura da capa em telas menores */
+}
+
+.book-info {
+    max-width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.back-button {
+    width: 100%; /* Botão ocupa toda a largura */
+    font-size: 1.2em;
+    padding: 15px;
+}
+.container-drummond {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.poem-box1{
+    width: 300px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    padding-top: 150px;
+}
+.content21{
+    flex-direction: column;
+}
+.autores{
+    padding-top: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+}
+.autores{
+    align-items: center;
+    justify-content: center;
+}
+
+.autores2{
+    height: 200px;
+    width: 300px;
+    margin-left: 220px;
+    padding: 10px;
+}
+.autores h1{
+    font-size: 30px;
+}
+@media (max-width: 1130px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 21px;
+    }
+}
+@keyframes navLinkFade  {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+         opacity:1;
+         transform:translateX(0)
+    }
+}
+.mobile-menu.active .line1 {
+    transform:rotate(-45deg) translate( -8px,8px);
+}
+.mobile-menu.active .line2 {
+    opacity:0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px,-7px);
+}
+}
